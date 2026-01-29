@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { FaInstagram, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import chai from "../assets/Chai.png";
+import Chai from "../assets/Chai.png";
 
-export default function ChaiLandingPage() {
+export default function Home() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
@@ -46,7 +46,7 @@ export default function ChaiLandingPage() {
             <div className="absolute inset-0 bg-linear-to-br from-amber-600 to-orange-800 rounded-full blur-xl opacity-30 animate-pulse"></div>
             <div className="relative bg-linear-to-br from-amber-700 via-orange-700 to-amber-900 text-cream-100 w-32 h-32 rounded-full flex items-center justify-center shadow-2xl border-4 border-amber-300">
               <div className="flex flex-col justify-center items-center">
-                <img className="h-20 w-25 mr-2 mt-2" src={chai} alt="" />
+                <img className="h-20 w-25 mr-2 mt-2" src={Chai} alt="" />
                 <div
                   className="text-xs tracking-widest mt-1"
                   style={{ fontFamily: "Georgia, serif" }}
@@ -181,21 +181,6 @@ export default function ChaiLandingPage() {
           <p>© 2026 Royal Chai. Crafted with tradition and excellence.</p>
         </div>
       </div>
-
-      <style jsx>{`
-        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap");
-
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
-import ChaiLandingPage from "./components/ChaiLandingPage";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="main">
-      <ChaiLandingPage />
+      <Home />
     </div>
   );
 }
